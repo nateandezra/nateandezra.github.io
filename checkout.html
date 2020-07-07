@@ -1,0 +1,675 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Nuxxd</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Favicon -->
+	<link rel="icon" href="images/Logo.PNG" type="image/png">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-2">
+							<div id="colorlib-logo"><a href="index.html">Nuxxd</a></div>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="active">
+									<a href="shop.html">Shop</a>
+									<!--<ul class="dropdown">
+										<li><a href="product-detail.html">Product Detail</a></li>
+										<li><a href="cart.html">Shipping Cart</a></li>
+										<li><a href="checkout.html">Checkout</a></li>
+										<li><a href="order-complete.html">Order Complete</a></li>
+										<li><a href="add-to-wishlist.html">Wishlist</a></li>
+									</ul>-->
+								<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="cart.html"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<aside id="colorlib-hero" class="breadcrumbs">
+			<div class="flexslider">
+				<ul class="slides">
+					<li style="background-image: url(images/All4.png);">
+						<div class="overlay"></div>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+									<div class="slider-text-inner text-center">
+										<h1>Checkout</h1>
+										<h2 class="bread"><span><a href="index.html">Home</a></span> <span><a
+													href="cart.html">Shopping Cart</a></span> <span>Checkout</span></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</aside>
+
+		<div class="colorlib-shop">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="process-wrap">
+							<div class="process text-center active">
+								<p><span>01</span></p>
+								<h3>Shopping Cart</h3>
+							</div>
+							<div class="process text-center active">
+								<p><span>02</span></p>
+								<h3>Checkout</h3>
+							</div>
+							<div class="process text-center">
+								<p><span>03</span></p>
+								<h3>Order Complete</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-7">
+						<form method="post" class="colorlib-form">
+							<h2>Billing Details</h2>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="country">Select Country</label>
+										<div class="form-field">
+											<i class="icon icon-arrow-down3"></i>
+											<select name="people" id="people" class="form-control">
+												<option value="#">USA</option>
+												<!--<option value="#">China</option>
+												<option value="#">Japan</option>
+												<option value="#">Korea</option>
+												<option value="#">Philippines</option>-->
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-6">
+										<label for="fname">First Name</label>
+										<input type="text" id="fname" class="form-control" placeholder="First Name"
+											onfocusout="validateFirstNameAndSave()">
+									</div>
+									<div class="col-md-6">
+										<label for="lname">Last Name</label>
+										<input type="text" id="lname" class="form-control" placeholder="Last Name"
+											onfocusout="addCustomer()">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<!--<div class="form-group">
+										<label for="companyname">Company Name</label>
+										<input type="text" id="companyname" class="form-control"
+											placeholder="Company Name">
+									</div>-->
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="fname">Address</label>
+										<input type="text" id="address" class="form-control" placeholder="Address"
+											onfocusout="addCustomer()">
+									</div>
+									<div class="form-group">
+										<input type="text" id="address2" class="form-control" onfocusout="addCustomer()"
+											placeholder="Second Address">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="companyname">Town/City</label>
+										<input type="text" id="towncity" class="form-control" placeholder="Town / City"
+											onfocusout="addCustomer()">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-6">
+										<label for="stateprovince">State/Province</label>
+										<input type="text" id="stateprovince" class="form-control"
+											placeholder="State / Province" onfocusout="addCustomer()">
+									</div>
+									<div class="col-md-6">
+										<label for="lname">Zip/Postal Code</label>
+										<input type="text" id="zippostalcode" class="form-control"
+											onfocusout="addCustomer()" placeholder="Zip / Postal">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-6">
+										<label for="email">E-mail Address</label>
+										<input type="text" id="email" class="form-control" placeholder="Email"
+											onfocusout="addCustomer()">
+									</div>
+									<div class="col-md-6">
+										<label for="Phone">Phone Number</label>
+										<input type="text" id="phonenumber" class="form-control" placeholder="Phone"
+											onfocusout="addCustomer()">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-12">
+										<!--<div class="radio">
+											<label><input type="radio" name="optradio">I like Dogs more</label>
+											<label><input type="radio" name="optradio">I like Cats better</label>
+										</div>-->
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-md-5">
+						<div class="cart-detail">
+							<h2>Cart Total</h2>
+							<ul>
+								<li>
+									<span>Subtotal</span> <span id="subtotal">$100.00</span>
+									<ul id="itemsummary">
+									</ul>
+								</li>
+								<li><span>Shipping</span> <span id="delivery">$0.00</span></li>
+								<li><span>Order Total</span> <span id="grandtotal">$180.00</span></li>
+							</ul>
+						</div>
+						<div class="cart-detail">
+							<h2>Place Order</h2>
+							<div class="form-group">
+								<div class="col-md-12">
+									<div class="checkbox">
+										<label><input type="checkbox" value="">I have read and accept the terms and
+											conditions</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<p><a onclick="placeOrder();" class="btn btn-primary">Place an order</a></p>
+								</div>
+							</div>
+						</div>
+						<div id="payment-div" class="cart-detail" style="visibility: hidden;">
+							<h2>Payment Method</h2>
+							<div class="form-group">
+								<div id="paypal-button-container"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--<div class="colorlib-shop">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center colorlib-heading">
+							<h2><span>Recommended Products</span></h2>
+							<p>We love to tell our successful far far away, behind the word mountains, far from the
+								countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 text-center">
+							<div class="product-entry">
+								<div class="product-img" style="background-image: url(images/item-5.jpg);">
+									<p class="tag"><span class="new">New</span></p>
+									<div class="cart">
+										<p>
+											<span class="addtocart"><a href="#"><i
+														class="icon-shopping-cart"></i></a></span>
+											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
+											<span><a href="#"><i class="icon-heart3"></i></a></span>
+											<span><a href="add-to-wishlist.html"><i
+														class="icon-bar-chart"></i></a></span>
+										</p>
+									</div>
+								</div>
+								<div class="desc">
+									<h3><a href="shop.html">Floral Dress</a></h3>
+									<p class="price"><span>$300.00</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 text-center">
+							<div class="product-entry">
+								<div class="product-img" style="background-image: url(images/item-6.jpg);">
+									<p class="tag"><span class="new">New</span></p>
+									<div class="cart">
+										<p>
+											<span class="addtocart"><a href="#"><i
+														class="icon-shopping-cart"></i></a></span>
+											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
+											<span><a href="#"><i class="icon-heart3"></i></a></span>
+											<span><a href="add-to-wishlist.html"><i
+														class="icon-bar-chart"></i></a></span>
+										</p>
+									</div>
+								</div>
+								<div class="desc">
+									<h3><a href="shop.html">Floral Dress</a></h3>
+									<p class="price"><span>$300.00</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 text-center">
+							<div class="product-entry">
+								<div class="product-img" style="background-image: url(images/item-7.jpg);">
+									<p class="tag"><span class="new">New</span></p>
+									<div class="cart">
+										<p>
+											<span class="addtocart"><a href="#"><i
+														class="icon-shopping-cart"></i></a></span>
+											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
+											<span><a href="#"><i class="icon-heart3"></i></a></span>
+											<span><a href="add-to-wishlist.html"><i
+														class="icon-bar-chart"></i></a></span>
+										</p>
+									</div>
+								</div>
+								<div class="desc">
+									<h3><a href="shop.html">Floral Dress</a></h3>
+									<p class="price"><span>$300.00</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 text-center">
+							<div class="product-entry">
+								<div class="product-img" style="background-image: url(images/item-8.jpg);">
+									<p class="tag"><span class="new">New</span></p>
+									<div class="cart">
+										<p>
+											<span class="addtocart"><a href="#"><i
+														class="icon-shopping-cart"></i></a></span>
+											<span><a href="product-detail.html"><i class="icon-eye"></i></a></span>
+											<span><a href="#"><i class="icon-heart3"></i></a></span>
+											<span><a href="add-to-wishlist.html"><i
+														class="icon-bar-chart"></i></a></span>
+										</p>
+									</div>
+								</div>
+								<div class="desc">
+									<h3><a href="shop.html">Floral Dress</a></h3>
+									<p class="price"><span>$300.00</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>-->
+
+
+			<footer id="colorlib-footer" role="contentinfo">
+				<div class="container">
+					<div class="row row-pb-md">
+						<div class="col-md-3 colorlib-widget">
+							<h4>About Nuxxd</h4>
+							<p>Nuxxd is a bay area artist who mainly works with colored pencils.
+								he decided to make a mark in the world of
+								art.
+								He
+								still showcases lots of his artistic adventures. Find him on Instagram at
+								@nuxxd.
+							</p>
+
+						</div>
+						<div class="col-md-2 colorlib-widget">
+							<h4>Customer Care</h4>
+							<p>
+								<ul class="colorlib-footer-links">
+									<li><a href="contact.html">Contact</a></li>
+
+									<li><a href="add-to-wishlist.html">Wishlist</a></li>
+
+									<li><a href="contact.html">Customer Services</a></li>
+
+								</ul>
+							</p>
+						</div>
+						<div class="col-md-2 colorlib-widget">
+							<h4>Information</h4>
+							<p>
+								<ul class="colorlib-footer-links">
+									<li><a href="about.html">About us</a></li>
+
+									<li><a href="contact.html">Support</a></li>
+
+								</ul>
+							</p>
+						</div>
+
+
+
+						<div class="col-md-3">
+							<h4>Contact Information</h4>
+							<ul class="colorlib-footer-links">
+
+								<li><a href="tel://1234567890">(123)-456-7890</a></li>
+								<li><a href="mailto:nateandezra@gmail.com">nateandezra@gmail.com</a></li>
+								<li><a href="https://www.instagram.com/nuxxd/"><i
+											class="icon-instagram"></i>@nuxxd</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="copy">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p>
+
+								<span class="block">
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+									Copyright &copy;
+									<script>document.write(new Date().getFullYear());</script> All rights reserved |
+									This
+									template is made with <i class="icon-heart2" aria-hidden="true"></i> by <a
+										href="https://colorlib.com" target="_blank">Colorlib</a>
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+								<span class="block">Demo Images: <a href="http://unsplash.co/"
+										target="_blank">Unsplash</a>
+									, <a href="http://pexels.com/" target="_blank">Pexels.com</a></span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<div class="gototop js-top">
+			<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+		</div>
+
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<!-- Flexslider -->
+		<script src="js/jquery.flexslider-min.js"></script>
+		<!-- Owl carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- Magnific Popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/magnific-popup-options.js"></script>
+		<!-- Date Picker -->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!-- Stellar Parallax -->
+		<script src="js/jquery.stellar.min.js"></script>
+		<!-- Main -->
+		<script src="js/main.js"></script>
+		<!-- Storage -->
+		<script src="js/storage.js"></script>
+		<!-- Paypal -->
+		<script
+			src="https://www.paypal.com/sdk/js?client-id=ATsDCjX-LTcOl3g9YijwTHYB16mF8_WDmG_ZxBEw_58PM7HRRhIFWnrYfOjMiI0hTSSAeLnqPA31Ltni&currency=USD"></script>
+		</script>
+
+		<script>
+
+			function placeOrder() {
+				var fname = document.getElementById('first_name');
+				console.log('fname', fname)
+				var lname = document.getElementById('last_name');
+				var address = document.getElementById('address');
+				var city = document.getElementById('city');
+				var state = document.getElementById('state');
+				var zip = document.getElementById('zip');
+				var email = document.getElementById('email');
+				var phone = document.getElementById('phone');
+				console.log("yay");
+				let activeCart = getCartFromStorage();
+				console.log({ activeCart })
+				sendOrderDetails(activeCart);
+				var paymentDiv = document.getElementById('payment-div')
+				paymentDiv.style.visibility = 'visible'
+
+				//emailOrderDetails("Your user's name", "user@domain.com", "Here is my message");
+			};
+
+			function sendOrderDetails(cart) {
+				console.log("Sending Email...")
+				console.log({ cart })
+
+				$.ajax({
+					url: "https://nowalist.com/ezform",
+					method: "POST",
+					data: { activecart: JSON.stringify(cart) },
+					datatype: "json"
+				});
+				console.log('afterfilesubmit')
+			}
+
+			function emailOrderDetails(name, email, message) {
+				var destinationEmail = "nateandezra@gmail.com";
+				var form = document.createElement('form');
+				form.setAttribute("action", "https://formspree.io/" + destinationEmail)
+				form.setAttribute("method", "POST")
+
+				// Subject for your email
+				var field = document.createElement("input");
+				field.setAttribute("type", "hidden");
+				field.setAttribute("name", "_subject");
+				field.setAttribute("value", "Contact form submitted");
+				form.appendChild(field);
+
+				// Contact email address        
+				field = document.createElement("input");
+				field.setAttribute("type", "hidden");
+				field.setAttribute("name", "email");
+				field.setAttribute("value", email);
+				form.appendChild(field);
+
+				// Your user's name
+				field = document.createElement("input");
+				field.setAttribute("type", "hidden");
+				field.setAttribute("name", "name");
+				field.setAttribute("value", name);
+				form.appendChild(field);
+
+				// The text message
+				field = document.createElement("input");
+				field.setAttribute("type", "hidden");
+				field.setAttribute("name", "message");
+				field.setAttribute("value", message);
+				form.appendChild(field);
+
+				document.body.appendChild(form);
+				form.submit();
+
+				return false;
+			}
+
+			populateCustomer();
+			getSubtotal();
+			let activeCart = getCartFromStorage();
+
+			for (var i = 0; i < activeCart.shoppingCartItems.length; i++) {
+				console.log(activeCart.shoppingCartItems[i])
+				populateItemSummary(activeCart.shoppingCartItems[i])
+			}
+
+			function populateItemSummary(item) {
+				item = ShoppingCartItem.fromObject(item);
+				$("#itemsummary").append('<li><span>' + item.quantity + ' x ' + item.name + '</span> <span>$' + item.getTotal() + '</span></li>')
+			}
+
+			function populateSimilar() {
+
+			}
+
+			function populateCustomer() {
+				let activeCart = getCartFromStorage();
+				if (activeCart.customer != null) {
+					document.getElementById("fname").value = activeCart.customer.first_name;
+					document.getElementById("lname").value = activeCart.customer.last_name;
+					document.getElementById("address").value = activeCart.customer.address;
+					document.getElementById("address2").value = activeCart.customer.second_address;
+					document.getElementById("towncity").value = activeCart.customer.city;
+					document.getElementById("stateprovince").value = activeCart.customer.state;
+					document.getElementById("email").value = activeCart.customer.email;
+					document.getElementById("phonenumber").value = activeCart.customer.phone;
+				}
+			}
+
+			function getSubtotal() {
+				let activeCart = getCartFromStorage();
+				document.getElementById("subtotal").textContent = "$".concat(activeCart.getTotal());
+				document.getElementById("delivery").textContent = "$".concat(parseFloat(activeCart.calculateShipping() - activeCart.getDiscount()).toFixed(2));
+				document.getElementById("grandtotal").textContent = "$".concat(activeCart.totalWithShipping());
+				console.log('yay')
+			}
+
+			function validateFirstNameAndSave() {
+				let first_name_element = document.getElementById("fname")
+				let first_name = first_name_element.value
+				if (first_name.length == 0) {
+					alert("Please input a first name");
+					first_name_element.focus()
+				} else {
+					addCustomer();
+				}
+
+			}
+
+			function addCustomer() {
+				let first_name = document.getElementById("fname").value
+				let last_name = document.getElementById("lname").value
+				let address = document.getElementById("address").value
+				let second_address = document.getElementById("address2").value
+				let city = document.getElementById("towncity").value
+				let state = document.getElementById("stateprovince").value
+				let zip = document.getElementById("zippostalcode").value
+				let email = document.getElementById("email").value
+				let phone = document.getElementById("phonenumber").value
+				console.log("first_name: ", first_name, ", last_name: ", last_name, ", second_adress:", second_address, "city: ", city, "state: ", state, "zip: ", zip, "email: ", email, "phone: ", phone)
+				/**
+				if (first_name.length == 0) {
+					alert("Please input a first name");
+				} else if (last_name.length == 0) {
+					alert("Please input a last name");
+				} else if (address.length == 0) {
+					alert("Please input an age");
+				}
+				else if (city.length == 0) {
+					alert("Please input a city");
+				}
+				else if (state.length == 0) {
+					alert("Please input a state");
+				}
+				else if (zip.length == 0) {
+					alert("Please input a zip");
+				}
+				else if (email.length == 0) {
+					alert("Please input an email");
+				}
+				else if (phone.length == 0) {
+					alert("Please input a phone number");
+				}
+				**/
+				let activeCart = getCartFromStorage();
+				let buyer = new Customer("USA", first_name, last_name, address, second_address, city, state, zip, email, phone)
+				activeCart.customer = buyer;
+				saveToStorage(activeCart);
+			}
+
+			paypal.Buttons({
+				style: {
+					shape: 'pill',
+					color: 'gold',
+					layout: 'vertical',
+					label: 'pay',
+
+				},
+				createOrder: function (data, actions) {
+					return actions.order.create({
+						purchase_units: [{
+							amount: {
+								value: (activeCart.totalWithShipping())
+							}
+						}]
+					});
+				},
+
+				onApprove: function (data, actions) {
+					return actions.order.capture().then(function (details) {
+						alert('Transaction completed by ' + details.payer.name.given_name + '!');
+					});
+				}
+			}).render('#paypal-button-container');
+
+
+
+		</script>
+
+</body>
+
+</html>
