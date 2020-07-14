@@ -39,7 +39,7 @@ var detailViewData = {
   //  price: "5.00",
   // },
   vegeta_art_print_1: {
-    id: "vegeta_art_print",
+    id: "vegeta_art_print_1",
     name: '"Vegeta" Signed Art Print 4" X 6"',
     description: "Hand signed art print on cardstock.",
     main_image: "Vegeta.JPG",
@@ -49,7 +49,7 @@ var detailViewData = {
     price: "8.00",
   },
   vegeta_art_print_2: {
-    id: "vegeta_art_print",
+    id: "vegeta_art_print_2",
     name: '"Vegeta" Signed Art Print 8" X 10"',
     description: "Hand signed art print on cardstock.",
     main_image: "Vegeta.JPG",
@@ -59,7 +59,7 @@ var detailViewData = {
     price: "15.00",
   },
   vegeta_art_print_3: {
-    id: "vegeta_art_print",
+    id: "vegeta_art_print_3",
     name: '"Vegeta" Signed Art Print 18" X 24"',
     description: "Hand signed art print on cardstock.",
     main_image: "VegetaPoster.PNG",
