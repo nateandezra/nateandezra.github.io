@@ -83,7 +83,7 @@ var detailViewData = {
     name: '"Luffy" Individual Sticker',
     description: "Individual Sticker, 2 inches by 2 inches.",
     main_image: "Luffy2.PNG",
-    image1: "Luffy1.png",
+    image1: "Luffy1.PNG",
     image2: "luffy.png",
     image3: "Luffy3.PNG",
     price: "3.50",
