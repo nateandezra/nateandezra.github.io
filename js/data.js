@@ -94,7 +94,7 @@ var detailViewData = {
     description: "10 high quality gloss finish stickers, 2 inches by 2 inches.",
     main_image: "dbsticker.PNG",
     image1: "dbsticker1.PNG ",
-    image2: "dbsticker2.png",
+    image2: "dbsticker2.PNG",
     image3: "dbsticker3.PNG",
     price: "15.00",
   },
