@@ -88,6 +88,16 @@ var detailViewData = {
     image3: "Luffy3.PNG",
     price: "3.50",
   },
+  spoon_sticker_pack: {
+    id: "spoon_sticker_pack",
+    name: '"Wotherspoon" Individual Sticker',
+    description: "Individual Sticker, 2 inches by 2 inches.",
+    main_image: "Spoon1.JPG",
+    image1: "Spoon2.PNG",
+    image2: "Spoon3.PNG",
+    image3: "Spoon4.PNG",
+    price: "3.50",
+  },
   db_sticker_pack: {
     id: "db_sticker_pack",
     name: '"Dragon Ball" Sticker Pack',
