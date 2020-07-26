@@ -108,6 +108,16 @@ var detailViewData = {
     image3: "dbsticker3.PNG",
     price: "15.00",
   },
+  hiphop_sticker_pack: {
+    id: "hiphop_sticker_pack",
+    name: '"Hip Hop" Sticker Pack',
+    description: "6 high quality gloss finish stickers, 2 inches by 2 inches.",
+    main_image: "hiphop1.PNG",
+    image1: "hiphop2.PNG ",
+    image2: "hiphop3.JPG",
+    image3: "hiphop4.JPG",
+    price: "10.00",
+  },
   //joker_art_print: {
   // id: "joker_art_print",
   // name: '"Joker" Signed Art Print',
